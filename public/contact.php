@@ -45,11 +45,11 @@
                         <a class="nav-link page-scroll" href="./#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="./#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline">
-                    <a class="btn btn-primary" href="#buy-navbar">
+                    <a class="btn btn-primary" href="./plans#buy-navbar">
                         Explore plans
                     </a>
                 </form>

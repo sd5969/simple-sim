@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^simple-sim/$ simple-sim/index.html [NC]
+RewriteRule ^simple-sim/plans$ simple-sim/plans.html [NC]
+RewriteRule ^simple-sim/contact$ simple-sim/contact.php [NC]
