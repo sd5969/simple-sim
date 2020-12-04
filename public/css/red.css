@@ -7803,3 +7803,50 @@ footer a {
 @media screen and (max-width: 768px) {
   .switcher-wrap {
     display: none; } }
+
+    /*****************
+    Really Custom CSS
+    *****************/
+
+.amp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.amp-container .amp {
+  width: 70px;
+  min-width: 70px;
+  margin: 10px 10px 10px 10px;
+}
+
+.amp-container .amp .amp-title {
+  background: #777;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.amp-container .amp .amp-title.dark-amp-title {
+  background: #444;
+}
+
+.amp-container .amp .amp-subtitle {
+  color: #ff1744;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.share-email {
+  border: 1px solid #ff1744;
+  height: 44px;
+  width: 400px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
