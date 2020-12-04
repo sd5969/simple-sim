@@ -66,6 +66,7 @@
                           us your email to join our waitlist and we'll reach out once we&apos;re ready to go!</p>
 						<?php
                           if(isset($_POST["email"])) {
+							file_put_contents("emails.txt", filter_var(trim($_POST["email"]), FILTER_SANITIZE_STRING) . "\r\n", FILE_APPEND);
 						?>
                           <div class="form-submitted">Thanks for submitting your info!</div>
 						<?php } ?>
@@ -83,7 +84,7 @@
         </section>
 
         <!--footer-->
-        <footer class="py-5 bg-light" id="contact">
+        <footer class="py-5 bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
