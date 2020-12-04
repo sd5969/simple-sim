@@ -7848,5 +7848,14 @@ footer a {
   width: 400px;
   padding: 10px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 0px 5px;
+}
+
+.form-submitted {
+  padding: 10px;
+  background: #85ffbc;
+  border: 1px solid #52cc89;
+  border-radius: 0px 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
