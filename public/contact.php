@@ -8,7 +8,9 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-67813361-1');
+        gtag('config', 'UA-67813361-1', {
+ 		  'page_path': location.pathname + location.search + location.hash
+		});
         </script>
         <!-- Required meta tags -->
         <meta charset="utf-8">
