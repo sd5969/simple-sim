@@ -2,21 +2,21 @@
 <html lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67813361-1"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YLJ82GLCN"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-67813361-1', {
+        gtag('config', 'G-9YLJ82GLCN', {
           'page_path': location.pathname + location.search + location.hash
         });
         </script>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>SIMple SIM - Stay Connected</title>
-        <meta name="description" content="SIMple SIM is the eSIM marketplace of the future." />
+        <title>Wanderr - Stay Connected</title>
+        <meta name="description" content="Wanderr is the eSIM marketplace of the future." />
 
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i" rel="stylesheet">
@@ -32,7 +32,7 @@
         <!--navigation-->
         <nav class="navbar navbar-expand-md navbar-light fixed-top sticky-navigation" id="ebook-navbar">
             <a class="navbar-brand" href="./">
-                SIMple SIM
+                Wanderr
             </a>
             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,9 +99,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <h5>About SIMple SIM</h5>
+                        <h5>About Wanderr</h5>
                         <p class="text-muted mt-4">
-                            Founded in 2020, SIMple SIM was created by five jetsetting Wharton MBA students with a mission to
+                            Founded in 2020, Wanderr was created by five jetsetting Wharton MBA students with a mission to
                             offer cheap and easy data connectivity to travel aficionados all across the world.
                         </p>
                         <ul class="list-inline social social-sm mt-4">
@@ -141,7 +141,7 @@
                 <hr class="my-5"/>
                 <div class="row">
                     <div class="col-12 text-muted text-center">
-                        &copy; 2020 SIMple SIM - All Rights Reserved
+                        &copy; 2020 Wanderr - All Rights Reserved
                     </div>
                 </div>
             </div>

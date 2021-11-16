@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteBase /simple-sim/
+RewriteBase /
 RewriteRule ^plans$ plans.html [NC]
 RewriteRule ^contact$ contact.php [NC]
