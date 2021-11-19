@@ -77,12 +77,12 @@
                         <h1 class="mt-2">Well this is awkward...</h1>
                         <p class="lead mb-4">We&apos;re actively working on getting our product ready for general availability. Please drop
                           us your email to join our waitlist and we'll reach out once we&apos;re ready to go!</p>
-						<?php
+			<?php
                           if(isset($_POST["email"])) {
-							file_put_contents("emails.txt", filter_var(trim($_POST["email"]), FILTER_SANITIZE_STRING) . "\r\n", FILE_APPEND);
-						?>
-                          <div class="form-submitted">Thanks for submitting your info!</div>
-						<?php } ?>
+			    file_put_contents("emails.txt", filter_var(trim($_POST["email"]), FILTER_SANITIZE_STRING) . "\r\n", FILE_APPEND);
+		        ?>
+                        <div class="form-submitted">Thanks for submitting your info!</div>
+	                <?php } ?>
                         <form method="POST" action="./contact">
                           <input class="share-email" type="text" placeholder="Email" name="email" id="email" />
                           <button href="#" class="btn btn-primary d-inline-flex flex-row align-items-center">
