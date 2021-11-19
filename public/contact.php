@@ -19,7 +19,9 @@
         <meta name="description" content="Wanderr is the eSIM marketplace of the future." />
 
         <!--Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
         <!--vendors styles-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,7 +75,7 @@
                 <div class="row vh-md-100">
                     <div class="col-md-6 my-md-auto mb-5 mb-md-0 text-center text-md-left">
                         <h1 class="mt-2">Well this is awkward...</h1>
-                        <p class="lead mb-4">We&apos;re actively working on getting our product ready for market. Please drop
+                        <p class="lead mb-4">We&apos;re actively working on getting our product ready for general availability. Please drop
                           us your email to join our waitlist and we'll reach out once we&apos;re ready to go!</p>
 						<?php
                           if(isset($_POST["email"])) {
