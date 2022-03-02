@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Bootstrap CSS / Color Scheme -->
-        <link rel="stylesheet" href="css/red.css" id="theme-color">
+        <link rel="stylesheet" href="css/default.css" id="theme-color">
     </head>
     <body data-spy="scroll" data-target="#ebook-navbar" data-offset="0">
 
@@ -73,7 +73,7 @@
         <section class="pt-7 pt-md-5" id="home">
             <div class="container">
                 <div class="row vh-md-100">
-                    <div class="col-md-6 my-md-auto mb-5 mb-md-0 text-center text-md-left">
+                    <div class="col-md-9 my-md-auto mb-5 mb-md-0 text-center text-md-left">
                         <h1 class="mt-2">Well this is awkward...</h1>
                         <p class="lead mb-4">We&apos;re actively working on getting our product ready for general availability. Please drop
                           us your email to join our waitlist and we'll reach out once we&apos;re ready to go!</p>
@@ -90,7 +90,7 @@
                           </button>
                         </form>
                     </div>
-                    <div class="col-md-6 my-md-auto">
+                    <div class="col-md-3 my-md-auto">
                     </div>
                 </div>
             </div>
