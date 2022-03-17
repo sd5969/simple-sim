@@ -7849,3 +7849,12 @@ footer a {
   margin-bottom: 30px;
   font-weight: bold;
 }
+
+.form-error {
+  padding: 10px;
+  background: #ff85bc;
+  border: 1px solid #cc5289;
+  border-radius: 0px 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}

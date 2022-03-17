@@ -97,7 +97,7 @@
 
                           if($captcha) {
 
-                            $secretKey = "Put your secret key here";
+                            $secretKey = "";
                             $ip = $_SERVER['REMOTE_ADDR'];
                             // post request to server
                             $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
@@ -115,7 +115,7 @@
                             } else {
                         ?>
 
-                        <div class="form-submitted">There was an issue capturing your info.</div>
+                        <div class="form-error">There was an issue capturing your info.</div>
 
                         <?php
                             }
