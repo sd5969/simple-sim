@@ -33,7 +33,7 @@
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script>
           function onSubmit(token) {
-            document.getElementById("submitButton").submit();
+            document.getElementById("contactForm").submit();
           }
         </script>
         
@@ -122,7 +122,7 @@
                           }
                         ?>
 
-                        <form method="POST" action="./contact">
+                        <form id="contactForm" method="POST" action="./contact">
                           <input class="share-email" type="text" placeholder="Email" name="email" id="email" /><br /><br />
                           <button href="#" id="submitButton" data-sitekey="6Ld70-seAAAAADuLajmaciWoV5rEsNmRC4FlvtUf" data-callback="onSubmit" class="g-recaptcha btn btn-primary d-inline-flex flex-row align-items-center">
                               Submit
