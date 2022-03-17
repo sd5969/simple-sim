@@ -28,6 +28,15 @@
 
         <!-- Bootstrap CSS / Color Scheme -->
         <link rel="stylesheet" href="css/default.css" id="theme-color">
+
+        <!-- ReCaptcha stuff -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+          function onSubmit(token) {
+            document.getElementById("submitButton").submit();
+          }
+        </script>
+        
     </head>
     <body data-spy="scroll" data-target="#ebook-navbar" data-offset="0">
 
@@ -74,18 +83,48 @@
             <div class="container">
                 <div class="row vh-md-100">
                     <div class="col-md-9 my-md-auto mb-5 mb-md-0 text-center text-md-left">
-                        <h1 class="mt-2">Well this is awkward...</h1>
-                        <p class="lead mb-4">We&apos;re actively working on getting our product ready for general availability. Please drop
+                        <h1 class="mt-2">We're almost ready!</h1>
+                        <p class="lead mb-4">Wanderr is currently in a limited beta program. We&apos;re actively working on getting our product ready for general availability. Please drop
                           us your email to join our waitlist and we'll reach out once we&apos;re ready to go!</p>
+
 			<?php
-                          if(isset($_POST["email"])) {
-			    file_put_contents("emails.txt", filter_var(trim($_POST["email"]), FILTER_SANITIZE_STRING) . "\r\n", FILE_APPEND);
+                          if(isset($_POST['email'])){
+                            $email=$_POST['email'];
+                          }
+                          if(isset($_POST['g-recaptcha-response'])){
+                            $captcha=$_POST['g-recaptcha-response'];
+                          }
+
+                          if($captcha) {
+
+                            $secretKey = "Put your secret key here";
+                            $ip = $_SERVER['REMOTE_ADDR'];
+                            // post request to server
+                            $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+                            $response = file_get_contents($url);
+                            $responseKeys = json_decode($response,true);
+
+                          // should return JSON with success as true
+                            if($responseKeys["success"] && $email) {
+			      file_put_contents("emails.txt", filter_var(trim($_POST["email"]), FILTER_SANITIZE_STRING) . "\r\n", FILE_APPEND);
 		        ?>
+
                         <div class="form-submitted">Thanks for submitting your info!</div>
-	                <?php } ?>
+
+	                <?php
+                            } else {
+                        ?>
+
+                        <div class="form-submitted">There was an issue capturing your info.</div>
+
+                        <?php
+                            }
+                          }
+                        ?>
+
                         <form method="POST" action="./contact">
-                          <input class="share-email" type="text" placeholder="Email" name="email" id="email" />
-                          <button href="#" class="btn btn-primary d-inline-flex flex-row align-items-center">
+                          <input class="share-email" type="text" placeholder="Email" name="email" id="email" /><br /><br />
+                          <button href="#" id="submitButton" data-sitekey="6Ld70-seAAAAADuLajmaciWoV5rEsNmRC4FlvtUf" data-callback="onSubmit" class="g-recaptcha btn btn-primary d-inline-flex flex-row align-items-center">
                               Submit
                           </button>
                         </form>
